@@ -1,0 +1,16 @@
+---
+title: "Biden Polling"
+format: html
+execute: 
+  echo: false
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+poll_data <- tibble(biden = as.factor(c(rep("Yes", 655), 
+                                        rep("No", 904)))) |> 
+                slice_sample(prop = 1)
+```
+
+People’s voting preferences are often influenced by a mix of personal characteristics and political leanings, making them both meaningful and unpredictable. Using a March 2024 survey of 1,559 U.S. adults, we examine which individuals say they would vote for Joe Biden if the election were held today.
