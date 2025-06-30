@@ -63,7 +63,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>People’s voting preferences are often influenced by a mix of personal characteristics and political leanings, making them both meaningful and unpredictable. Using a March 2024 survey of 1,559 U.S. adults, we examine which individuals say they would vote for Joe Biden if the election were held today.</p>
+<p>[ ( ) = _0 + _1 X_1 + _2 X_2 + ]</p>
+<p>[ = -0.469 + 0.723 ]</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Estimated Log-Odds of Biden Support (Intercept Only Model) Source: March 2024 YouGov Poll</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">term</th>
+<th style="text-align: right;">estimate</th>
+<th style="text-align: right;">conf.low</th>
+<th style="text-align: right;">conf.high</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-0.322</td>
+<td style="text-align: right;">-0.423</td>
+<td style="text-align: right;">-0.222</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analysis_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>People’s voting preferences are often influenced by a mix of personal characteristics and political leanings, making them both meaningful and unpredictable. Using a March 2024 survey of 1,559 U.S. adults, we examine which individuals say they would vote for Joe Biden if the election were held today.We model voter support for Biden—measured as a binary outcome (Yes/No)—as a logistic function of a constant term, estimating the overall likelihood of support across the population.Based on our model, we estimate that approximately 42% of U.S. adults support Biden, with a 95% confidence interval ranging from 40% to 45%, reflecting the uncertainty inherent in our sample-based inference.</p>
 
 </main>
 <!-- /main column -->
